@@ -13,6 +13,7 @@
 
 ```stata
 data_analyze var1 var2 var3, output("report.html") time(year)
+```
 
 ### 选项说明：
 
@@ -21,6 +22,7 @@ data_analyze var1 var2 var3, output("report.html") time(year)
 - **`output("report.html")`**：这个选项用于指定分析结果的输出文件路径和文件名。程序将生成一个 HTML 文件，包含所有分析结果和可视化图表。你可以根据需要修改文件名和路径。例如，`output("my_analysis_report.html")` 会将报告输出为 `my_analysis_report.html`。
 
 - **`time(year)`**：此选项用于指明数据的时间变量，适用于时间序列数据。如果你的数据是横截面数据（即没有时间变量），则不需要使用该选项。通过指定 `time(year)`，程序会识别数据中的时间维度，并进行相应的时间序列分析。如果不加 `time()` 选项，程序将假设数据是横截面的，仅进行跨变量的静态分析。
+
 
 ### 数据类型要求：
 
