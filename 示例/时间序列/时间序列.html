@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Analysis Auto Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: #333; }
+h2 { color: #666; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+h3 { color: #444; margin-top: 20px; }
+img { max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; }
+.info { background-color: #f5f5f5; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+th { background-color: #f2f2f2; font-weight: bold; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+tr:hover { background-color: #f0f0f0; }
+.section { margin-bottom: 30px; }
+</style>
+</head>
+<body>
+<h1>Data Analysis Auto Report</h1>
+<div class='info'>
+<p><strong>Analyzed Variables</strong>: ln_wpi wpi</p>
+<p><strong>Data Type</strong>: ts</p>
+<p><strong>Total Observations</strong>: 124</p>
+</div>
+<div class='section'>
+<h2>Descriptive Statistics</h2>
+<table>
+<tr><th>Variable</th><th>N</th><th>Mean</th><th>SD</th><th>Min</th><th>Max</th><th>Median</th></tr>
+<tr><td>ln_wpi</td><td>124</td><td>4.018</td><td>0.501</td><td>3.417726755142212</td><td>4.755312919616699</td><td>4.035952806472778</td></tr>
+<tr><td>wpi</td><td>124</td><td>62.774</td><td>30.244</td><td>30.5</td><td>116.1999969482422</td><td>56.60000038146973</td></tr>
+</table>
+</div>
+<div class='section'>
+<h2>Missing Value Analysis</h2>
+<table>
+<tr><th>Variable</th><th>Obs</th><th>Missing</th><th>Missing %</th></tr>
+<tr><td>ln_wpi</td><td>124</td><td>0</td><td>0%</td></tr>
+<tr><td>wpi</td><td>124</td><td>0</td><td>0%</td></tr>
+</table>
+</div>
+<div class='section'>
+<h2>Single-Variable Distribution</h2>
+<h3>ln_wpi (Continuous Variable)</h3>
+<img src="data_analyze_graphs/ln_wpi_hist.png" alt="ln_wpi Histogram">
+<img src="data_analyze_graphs/ln_wpi_box.png" alt="ln_wpi Box Plot">
+<h3>wpi (Continuous Variable)</h3>
+<img src="data_analyze_graphs/wpi_hist.png" alt="wpi Histogram">
+<img src="data_analyze_graphs/wpi_box.png" alt="wpi Box Plot">
+</div>
+<div class='section'>
+<h2>Time Trend Analysis</h2>
+<img src="data_analyze_graphs/ln_wpi_ts.png" alt="ln_wpi Time Series Plot">
+<img src="data_analyze_graphs/wpi_ts.png" alt="wpi Time Series Plot">
+</div>
+<div class='section'>
+<h2>Variable Correlation</h2>
+<img src="data_analyze_graphs/corr_heatmap.png" alt="Correlation Heatmap">
+</div>
+<hr>
+<div style='text-align: center; color: #777; font-size: 0.9em;'>
+<p><em>Report Generation Time: 27 Nov 2025 15:16:06</em></p>
+<p><em>Stata Version: 17</em></p>
+</div>
+</body>
+</html>

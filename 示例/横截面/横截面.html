@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Analysis Auto Report</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: #333; }
+h2 { color: #666; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+h3 { color: #444; margin-top: 20px; }
+img { max-width: 100%; height: auto; margin: 10px 0; border: 1px solid #ddd; }
+.info { background-color: #f5f5f5; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { padding: 8px; text-align: left; border: 1px solid #ddd; }
+th { background-color: #f2f2f2; font-weight: bold; }
+tr:nth-child(even) { background-color: #f9f9f9; }
+tr:hover { background-color: #f0f0f0; }
+.section { margin-bottom: 30px; }
+</style>
+</head>
+<body>
+<h1>Data Analysis Auto Report</h1>
+<div class='info'>
+<p><strong>Analyzed Variables</strong>: weight price length gear_ratio</p>
+<p><strong>Data Type</strong>: cs</p>
+<p><strong>Total Observations</strong>: 74</p>
+</div>
+<div class='section'>
+<h2>Descriptive Statistics</h2>
+<table>
+<tr><th>Variable</th><th>N</th><th>Mean</th><th>SD</th><th>Min</th><th>Max</th><th>Median</th></tr>
+<tr><td>weight</td><td>74</td><td>3019.459</td><td>777.194</td><td>1760</td><td>4840</td><td>3190</td></tr>
+<tr><td>price</td><td>74</td><td>6165.257</td><td>2949.496</td><td>3291</td><td>15906</td><td>5006.5</td></tr>
+<tr><td>length</td><td>74</td><td>187.932</td><td>22.266</td><td>142</td><td>233</td><td>192.5</td></tr>
+<tr><td>gear_ratio</td><td>74</td><td>3.015</td><td>0.456</td><td>2.190000057220459</td><td>3.890000104904175</td><td>2.955000042915344</td></tr>
+</table>
+</div>
+<div class='section'>
+<h2>Missing Value Analysis</h2>
+<table>
+<tr><th>Variable</th><th>Obs</th><th>Missing</th><th>Missing %</th></tr>
+<tr><td>weight</td><td>74</td><td>0</td><td>0%</td></tr>
+<tr><td>price</td><td>74</td><td>0</td><td>0%</td></tr>
+<tr><td>length</td><td>74</td><td>0</td><td>0%</td></tr>
+<tr><td>gear_ratio</td><td>74</td><td>0</td><td>0%</td></tr>
+</table>
+</div>
+<div class='section'>
+<h2>Single-Variable Distribution</h2>
+<h3>weight (Continuous Variable)</h3>
+<img src="data_analyze_graphs/weight_hist.png" alt="weight Histogram">
+<img src="data_analyze_graphs/weight_box.png" alt="weight Box Plot">
+<h3>price (Continuous Variable)</h3>
+<img src="data_analyze_graphs/price_hist.png" alt="price Histogram">
+<img src="data_analyze_graphs/price_box.png" alt="price Box Plot">
+<h3>length (Continuous Variable)</h3>
+<img src="data_analyze_graphs/length_hist.png" alt="length Histogram">
+<img src="data_analyze_graphs/length_box.png" alt="length Box Plot">
+<h3>gear_ratio (Continuous Variable)</h3>
+<img src="data_analyze_graphs/gear_ratio_hist.png" alt="gear_ratio Histogram">
+<img src="data_analyze_graphs/gear_ratio_box.png" alt="gear_ratio Box Plot">
+</div>
+<div class='section'>
+<h2>Variable Correlation</h2>
+<img src="data_analyze_graphs/corr_heatmap.png" alt="Correlation Heatmap">
+</div>
+<hr>
+<div style='text-align: center; color: #777; font-size: 0.9em;'>
+<p><em>Report Generation Time: 27 Nov 2025 15:11:50</em></p>
+<p><em>Stata Version: 17</em></p>
+</div>
+</body>
+</html>
